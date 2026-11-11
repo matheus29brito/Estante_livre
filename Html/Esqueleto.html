@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante Aberta - Livros para todos</title>
+        <link rel="stylesheet" href="estiloEstante.css">
+    
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-container">
+            <span class="logo-icon">[Ícone Logo]</span>
+            <div class="logo-text">
+                <h1>Estante Aberta</h1>
+                <span>Livros para todos</span>
+            </div>
+        </div>
+
+        <!-- Navegação Desktop -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Sobre o projeto</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Ações do usuário (Busca, Login, Cadastro) -->
+        <div class="user-actions">
+            <div class="search-bar">
+                <span class="search-icon">[Ícone Busca]</span>
+                <input type="text" placeholder="Buscar livros...">
+            </div>
+            <div class="auth-buttons">
+                <a href="#" class="btn-login">[Ícone Usuário] Entrar</a>
+                <a href="#" class="btn-register">Cadastrar</a>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Button -->
+        <button class="mobile-menu-btn">
+            [Ícone Menu]
+        </button>
+    </header>
+
+    <main>
+        <!-- HERO SECTION (Seção Principal) -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Grandes histórias estão mais próximas do que você imagina.</h2>
+                <p>
+                    O Estante Aberta é um acervo digital de livros que conecta pessoas, ideias e novos mundos. Aqui, a leitura é um direito de todos.
+                </p>
+                
+                <!-- Barra de Busca Grande -->
+                <div class="hero-search">
+                    <span class="search-icon">[Ícone Busca]</span>
+                    <input type="text" placeholder="Buscar por título, autor ou categoria...">
+                    <button type="button" class="btn-search">Buscar</button>
+                </div>
+            </div>
+
+            <!-- Ilustração -->
+            <div class="hero-image">
+                <!-- Insira o caminho para a sua imagem no atributo src -->
+                <img src="" alt="Ilustração de pilha de livros">
+                <div class="decorative-text">
+                    <p>Mais leitura, <br> mais possibilidades.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CATEGORIAS -->
+        <section class="categories-section">
+            <div class="categories-container">
+                
+                <!-- Card 1: Literatura -->
+                <a href="#" class="category-card">
+                    <span class="category-icon">[Ícone Livro Aberto]</span>
+                    <div class="category-info">
+                        <h3>Literatura</h3>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </a>
+
+                <!-- Card 2: Educação -->
+                <a href="#" class="category-card">
+                    <span class="category-icon">[Ícone Capelo]</span>
+                    <div class="category-info">
+                        <h3>Educação</h3>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </a>
+
+                <!-- Card 3: Artes e Cultura -->
+                <a href="#" class="category-card">
+                    <span class="category-icon">[Ícone Paleta]</span>
+                    <div class="category-info">
+                        <h3>Artes e Cultura</h3>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </a>
+
+                <!-- Card 4: Ciências e Tecnologia -->
+                <a href="#" class="category-card">
+                    <span class="category-icon">[Ícone Átomo]</span>
+                    <div class="category-info">
+                        <h3>Ciências e Tecnologia</h3>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </a>
+
+                <!-- Card 5: Autoajuda -->
+                <a href="#" class="category-card">
+                    <span class="category-icon">[Ícone Bússola]</span>
+                    <div class="category-info">
+                        <h3>Autoajuda e Desenvolvimento</h3>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE DESTAQUES DA SEMANA -->
+        <section class="highlights-section">
+            
+            <div class="section-header">
+                <h2>Destaques da semana</h2>
+                <a href="#" class="link-view-all">Ver todos [Seta]</a>
+            </div>
+
+            <div class="books-grid">
+                
+                <!-- Livro 1 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="" alt="Capa: A terça mais longa do ano">
+                    </div>
+                    <div class="book-details">
+                        <h3>A terça mais longa do ano</h3>
+                        <p class="author">Anna Claudia Ramos</p>
+                        <span class="tag">Literatura</span>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </article>
+
+                <!-- Livro 2 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="" alt="Capa: O poder dos hábitos">
+                    </div>
+                    <div class="book-details">
+                        <h3>O poder dos hábitos</h3>
+                        <p class="author">James Clear</p>
+                        <span class="tag">Autoajuda</span>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </article>
+
+                <!-- Livro 3 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="" alt="Capa: Sabor de você">
+                    </div>
+                    <div class="book-details">
+                        <h3>Sabor de você</h3>
+                        <p class="author">Carla Madeira</p>
+                        <span class="tag">Romance</span>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </article>
+
+                <!-- Livro 4 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="" alt="Capa: O caminho da água">
+                    </div>
+                    <div class="book-details">
+                        <h3>O caminho da água</h3>
+                        <p class="author">Ailton Krenak</p>
+                        <span class="tag">Ensaio</span>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </article>
+
+                <!-- Livro 5 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="" alt="Capa: Mulheres que correm com os lobos">
+                    </div>
+                    <div class="book-details">
+                        <h3>Mulheres que correm com os lobos</h3>
+                        <p class="author">Clarissa Pinkola Estés</p>
+                        <span class="tag">Psicologia</span>
+                        <span class="arrow-icon">[Seta]</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            
+            <!-- Logo Footer -->
+            <div class="footer-logo">
+                <span class="logo-icon">[Ícone Logo]</span>
+                <div class="logo-text">
+                    <h2>Estante Aberta</h2>
+                    <span>Livros para todos</span>
+                </div>
+            </div>
+
+            <!-- Slogan Central -->
+            <div class="footer-slogan">
+                <p>A leitura transforma realidades.</p>
+            </div>
+
+            <!-- Links e Redes Sociais -->
+            <div class="footer-links">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Sobre o projeto</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">[Instagram]</a>
+                    <a href="#" aria-label="Twitter">[Twitter]</a>
+                    <a href="#" aria-label="Facebook">[Facebook]</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
