@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literatura - Estante Aberta</title>
+    
+    <!-- Biblioteca de Ícones (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Link para o SEU arquivo CSS (o mesmo da página inicial) -->
+    <link rel="stylesheet" href="estiloEstante.css">
+</head>
+<body>
+
+    <!-- O MESMO HEADER DA PÁGINA INICIAL -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Estante Aberta" class="custom-logo" style="height: 40px; width: auto;">
+            <div class="logo-text">
+                <h1>Estante Aberta</h1>
+                <span>Livros para todos</span>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <!-- Note que o 'Início' agora aponta para o index.html -->
+                <li><a href="index2.html">Início</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Sobre o projeto</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="user-actions">
+            <div class="search-bar-mini">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar livros...">
+            </div>
+            <div class="auth-buttons">
+                <a href="#" class="btn-login"><i class="ph ph-user"></i> Entrar</a>
+                <a href="#" class="btn-register">Cadastrar</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO DO CATÁLOGO DE LITERATURA -->
+        <section class="highlights-section" style="padding-top: 4rem;">
+            
+            <!-- Cabeçalho da Seção com botão de voltar -->
+            <div class="section-header">
+                <div>
+                    <!-- Botão simples para voltar -->
+                    <a href="index2.html" style="color: #666; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <i class="ph ph-arrow-left"></i> Voltar para o Início
+                    </a>
+                    <h2>Categoria: Ciências e Tecnologia </h2>
+                </div>
+                <div class="search-bar-mini" style="background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.1);">
+                    <i class="ph ph-magnifying-glass" style="color: #666;"></i>
+                    <input type="text" placeholder="Buscar em literatura..." style="color: #333;">
+                </div>
+            </div>
+
+            <!-- Grade de Livros (Reaproveitando o seu CSS!) -->
+            <div class="books-grid">
+                
+                <!-- Livro 1 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="capa-terca.jpg" alt="Capa 1" onerror="this.src='https://placehold.co/200x300/1d3354/FFF?text=Livro+1'">
+                    </div>
+                    <div class="book-details">
+                        <h3>A terça mais longa do ano</h3>
+                        <p class="author">Anna Claudia Ramos</p>
+                        <div class="book-bottom">
+                            <span class="tag">Ficção</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Livro 2 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="livro2.jpg" alt="Capa 2" onerror="this.src='https://placehold.co/200x300/1d3354/FFF?text=Livro+2'">
+                    </div>
+                    <div class="book-details">
+                        <h3>O sol é para todos</h3>
+                        <p class="author">Harper Lee</p>
+                        <div class="book-bottom">
+                            <span class="tag">Clássico</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Livro 3 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="livro3.jpg" alt="Capa 3" onerror="this.src='https://placehold.co/200x300/1d3354/FFF?text=Livro+3'">
+                    </div>
+                    <div class="book-details">
+                        <h3>Dom Casmurro</h3>
+                        <p class="author">Machado de Assis</p>
+                        <div class="book-bottom">
+                            <span class="tag">Clássico</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Livro 4 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="livro4.jpg" alt="Capa 4" onerror="this.src='https://placehold.co/200x300/1d3354/FFF?text=Livro+4'">
+                    </div>
+                    <div class="book-details">
+                        <h3>1984</h3>
+                        <p class="author">George Orwell</p>
+                        <div class="book-bottom">
+                            <span class="tag">Ficção Científica</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Livro 5 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="livro5.jpg" alt="Capa 5" onerror="this.src='https://placehold.co/200x300/1d3354/FFF?text=Livro+5'">
+                    </div>
+                    <div class="book-details">
+                        <h3>A Menina que Roubava Livros</h3>
+                        <p class="author">Markus Zusak</p>
+                        <div class="book-bottom">
+                            <span class="tag">Romance Histórico</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Você pode continuar adicionando mais livros aqui. 
+                     O CSS vai jogar o 6º livro para a linha de baixo automaticamente! -->
+                     
+            </div>
+        </section>
+    </main>
+
+    <!-- O MESMO FOOTER DA PÁGINA INICIAL -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo Estante Aberta" class="custom-logo" style="height: 40px; width: auto;">
+                <div class="logo-text">
+                    <h1>Estante Aberta</h1>
+                    <span>Livros para todos</span>
+                </div>
+            </div>
+            <div class="footer-slogan">
+                <p>A leitura transforma realidades.</p>
+            </div>
+            <div class="footer-links">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index2.html">Início</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Sobre o projeto</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
